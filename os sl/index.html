@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Allocation Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📁 File Allocation Methods (OS)</h1>
+
+<div class="controls">
+  <input type="number" id="fileSize" placeholder="Enter file size (1-15)" min="1" max="15">
+  <button onclick="renderAll()">Show Allocation</button>
+  <button onclick="animateAllocation()">Animate</button>
+  <button onclick="showExplanation()">Explain</button>
+</div>
+
+<div class="container">
+
+  <div class="method">
+    <h3>Contiguous</h3>
+    <div id="contiguous" class="disk"></div>
+  </div>
+
+  <div class="method">
+    <h3>Linked</h3>
+    <div id="linked" class="disk"></div>
+  </div>
+
+  <div class="method">
+    <h3>Indexed</h3>
+    <div id="indexed" class="disk"></div>
+  </div>
+
+</div>
+
+<div id="explainBox"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

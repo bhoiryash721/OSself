@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #e3f2fd, #f4f6f9);
+}
+
+h1 {
+  margin-top: 20px;
+  color: #2d3436;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #0984e3, #6c5ce7);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.method {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+.disk {
+  display: flex;
+  gap: 6px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.block {
+  width: 45px;
+  height: 45px;
+  background: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 12px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.block:hover {
+  transform: scale(1.1);
+}
+
+.filled {
+  background: linear-gradient(45deg, #00b894, #55efc4);
+  color: white;
+  font-weight: bold;
+}
+
+.indexBlock {
+  background: #fdcb6e;
+  color: black;
+  font-weight: bold;
+}
+
+.arrow {
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+}
+
+#explainBox {
+  margin-top: 30px;
+  background: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
