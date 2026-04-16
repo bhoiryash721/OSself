@@ -1,5 +1,6 @@
 const totalBlocks = 20;
 
+
 let linkedPositions = [];
 let indexedPositions = [];
 
